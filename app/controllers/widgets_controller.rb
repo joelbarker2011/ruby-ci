@@ -1,3 +1,4 @@
+# main widgets controller, with all the normal REST verbs
 class WidgetsController < ApplicationController
   before_action :set_widget, only: [:show, :edit, :update, :destroy]
 
@@ -62,13 +63,14 @@ class WidgetsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_widget
-      @widget = Widget.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def widget_params
-      params.fetch(:widget, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_widget
+    @widget = Widget.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def widget_params
+    params.fetch(:widget, {})
+  end
 end
