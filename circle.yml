@@ -3,6 +3,11 @@ machine:
   timezone:
     America/Los_Angeles # Set the timezone
 
+## Customize dependencies
+dependencies:
+  pre:
+    - gem install bundler
+
 ## Customize test commands
 test:
   post:
