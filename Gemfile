@@ -40,6 +40,10 @@ group :development, :test do
 
   # A Ruby static code analyzer, based on the community Ruby style guide
   gem 'rubocop', require: false
+
+  # Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of
+  # coverage across test suites
+  gem 'simplecov', require: false
 end
 
 group :development do
